@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.gameBoard {
+    display: grid;
+    place-items: stretch;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    background-color: black;
+    grid-gap: 10px;  
+}
+
+.containerBoard {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 140, 208);
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: aquamarine;
+}
+
+.itemAfter:hover {
+    background-color: red;
+}
+
+.whoseMove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.playAgainButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.textButton {
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(148, 239, 200);
+}
+
+.textButton:hover {
+    background-color: aquamarine;
+}
